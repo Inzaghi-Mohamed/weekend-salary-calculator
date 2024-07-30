@@ -11,10 +11,46 @@
   </header>
   <main>
     <h2>Add Employee</h2>
+    <form action="">
+      <input type="text" data-testid="firstNameInput" placeholder="First Name" id="first-NameInput">
+      <input type="text" data-testid="lastNameInput" placeholder="Last Name" id="last-NameInput">
+      <input type="number" data-testid="iDInput" placeholder="ID" id="iD-Input">
+      <input type="text" data-testid="titleInput" placeholder="Title" id="title-Input">
+      <input type="number" data-testid="annualSlaryInput" placeholder="Annual Salary" id="annualSalary"> 
+      <button data-testid="submitButton" class="submit-btn">
+        Add Employee
+      </button>
+    </form>
+    <br><br>
+
     <h2>Employees</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Annual Salary</th>
+          <th>Delete Employee</th>
+        </tr>
+      </thead>
+      <tbody id="employeeDisplay">
+        <tr>
+          <td>Jen</td>
+          <td>Barber</td>
+          <td>0</td>
+          <td>Team Lead</td>
+          <td>$80,000</td>
+          <td><button class="delete-btn">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
   </main>
   <footer>
-    <p>Total Monthly</p>
+    <p>Total Monthly:</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
